@@ -1,0 +1,12 @@
+{
+    "name": "rust_for_atcoder",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "rust_for_atcoder",
+    "workspaceFolder": "/workspace",
+    "extensions": [
+        "vadimcn.vscode-lldb",
+        "rust-lang.rust-analyzer"
+    ]
+}

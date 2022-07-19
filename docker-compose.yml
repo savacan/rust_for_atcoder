@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  rust_for_atcoder:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    tty: true
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+      - rust-target:/workspace/comp/target
+      - cargo-cache:/usr/local/cargo/registry
+    environment:
+      USER: savacan
+
+volumes:
+  rust-target:
+  cargo-cache:
